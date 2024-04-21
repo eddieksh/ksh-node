@@ -1,0 +1,45 @@
+{
+  "name": "ksh-node",
+  "version": "11.3.0",
+  "description": "Generate a node binary package",
+  "author": "Aria Stewart <aredridel@dinhe.net>",
+  "main": "index.js",
+  "bin": "index.js",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddieksh/ksh-node"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.5",
+    "verror": "^1.9.0",
+    "yargs": "^17.0.1"
+  },
+  "eslintConfig": {
+    "sourceType": "module",
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "rules": {
+      "valid-typeof": "error",
+      "no-undef": "error",
+      "no-unused-vars": "error",
+      "no-process-exit": 0,
+      "no-shadow": 0,
+      "strict": 0,
+      "eqeqeq": 0,
+      "curly": 0
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
